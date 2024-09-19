@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.logo{
+width: 250px;  
+object-fit: cover;
+
+}
+.btn{
+    cursor: pointer;
+    border:1px solid #000
+}
+.link-tag{
+    color: #F9C034;
+    text-decoration: underline;
+    cursor: pointer;
+    text-underline-offset: 4px;
+
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url('../assets//calendar.png') no-repeat center;
+    background-size: 16px 16px;
+}
+.game-wrapper{
+    margin-top:-70px;
+    padding: 20px;
+}
+
+.gamewrapper-top{
+padding: 16px 0px 0px 0px;
+gap: 16px;
+border-radius: 0px 0px 20px 20px;
+opacity: 0px;
+box-shadow: 0px 2px 4px -2px #1018280F;
+
+box-shadow: 0px 4px 8px -2px #1018281A;
+
+
+}
+.gamepagelogo{
+    width: 100px;
+}
+.notification-div{
+    position: relative;
+}
+.badge{
+    width: 18px;
+    height: 18px;
+   background: #F04438;
+   position: absolute;
+   border-radius: 50%;
+   text-align: center;
+   padding:2px 2px 0px 2px;
+   top: -8px;
+   left: 12px;
+}  
+.notification-logo{
+    width: 30px;
+}
+.userProfile-wrapper{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    margin-top: -80px;
+    display: flex;  
+    gap: 16px;
+    align-items: center;
+}
+.search-wrapper{
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.search{
+    padding: 10px;
+    padding-left: 50px;
+    border: 1px solid #E6E6E6;
+    outline: none;
+    border-radius: 16px;
+    font-size:20px
+}
+.search-icon{
+    position:absolute;
+    top: 14px;
+    left: 10px;
+}
+.search-icon{
+    position:absolute;
+    top: 14px;
+    left: 10px;
+}
+.filter-icon{
+    position:absolute;
+    top: 14px;
+    right: 10px;
+}
+
+
+
+.swiper-pagination-bullet{
+    background:#F9C034 !important;
+
+}
+.categories-slider{
+    height:100%;
+}
+.category-img{
+    border-radius: 18px;
+    margin-top:10px
+}
+.category-text{
+    position:absolute;
+    width: 100%;
+    height: 30%;
+    background: #666666B2;
+    border-radius:0px 0px 18px 18px;
+    padding:10px
+}
+  
+/* Swiper container */
+.swiper.categories-slider {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    padding-bottom: 50px;
+    position: relative;
+  }
+  
+  /* Each slide */
+  .swiper-slide {
+    position: relative;
+  }
+  
+  .category-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .category-text {
+    position: absolute;
+    bottom:0px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    backdrop-filter: blur(10px); /* Apply the blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  }
+  
+  /* Swiper pagination bullets - move outside */
+  .custom-swiper-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #f9c034; /* Active bullet color */
+  }
+  
+  
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+    
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+   
+/* Swiper container styling */
+.swiper.mySwiper {
+  width: 100%;
+  max-width: 750px;
+  margin: auto;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* Slide and image styling */
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ForYou text styling with blurred background */
+.foryou-text {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Apply the blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  padding: 10px;
+  border-radius: 0px 0px 10px 10px;
+  width: 100%; /* Adjust the width of the text box */
+}
+.hidden {
+  display: none;
+}
+
+.icon-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0px; 
+  width: 100%;
+  
+  background:#fff;
+  z-index: 1000; 
+}
+
+.icon-bar a {
+  color: #cccccc; 
+  padding-top: 10px;
+  padding-left: 2px;
+  transition: color 0.3s ease; 
+  flex: 1; 
+}
+
+/* Style for the active icon (yellow color) */
+.icon-bar a.active {
+  color: #f9c034; /* Yellow color for active icon */
+}
+.allgamesUL{
+  list-style: none;
+}
+.allgamesli{
+  padding:8px;
+  box-shadow: 0px 1px 2px 0px #1018280F;
+box-shadow: 0px 1px 3px 0px #1018281A;
+
+}
+.tag{
+  padding:0px 5px 0px 5px;
+  border-radius:10px;
+  font-size: 12px;
+  border: 0.5px solid #C69006;
+  background: #FCE19C;
+ text-align: center;
+ color: #C69006;
+ position: absolute;
+ right: 50px;
+
+}
+.contact-div{
+  width: 100%;
+  height: 150px;
+  box-shadow: 0px 2px 4px -2px #1018280F;
+ border-radius: 12px;
+box-shadow: 0px 4px 8px -2px #1018281A;
+
+}
+.appbar-text{
+  text-align: center;
+  font-size:12px;
+}
+.contact-content{
+ display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100%;    
+}
+.contact-img{
+  margin-bottom:10px;
+}
+.support-textarea{
+  border: 1px solid #E6E6E6;
+  padding: 5px;
+  height: 140px;
+  resize: none;
+  width:100%;
+  border-radius:6px;
+  margin-top: 5px;
+}
+.support-attachment{
+  border: 1px solid #E6E6E6;
+  padding: 5px;
+  height:40px;
+ width:100%;
+  border-radius:6px;
+  margin-top: 5px;  
+}
+.notification-splash{
+   width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.notifications{
+  display:flex;
+  justify-content:space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+.qr-scanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-color: #333;
+    margin-top: 20px;
+}
+
+#qr-video-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+#qr-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.viewfinder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 5px solid transparent;
+    border-top-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Instructions text */
+.instructions {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 16px;
+}
+.ticket-owned{
+  box-shadow: 0px 4px 6px -2px #10182808;
+box-shadow: 0px 12px 16px -4px #10182814;
+border-radius: 12px;
+padding:14px 15px 14px 15px;
+}
+.ticket-availabe{
+  box-shadow: 0px 2px 4px -2px #1018280F;
+  box-shadow: 0px 4px 8px -2px #1018281A;
+  width:100%;
+  padding:12px;
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items:center;
+}
+.ticket-buy{
+  background: #F9C034;
+padding: 6px 12px 6px 12px;
+border-radius: 32px;
+margin-left:auto ;
+ 
+}
+.payment-div{
+border-radius: 12px;
+margin-top: 10px;
+padding:10px 15px 10px 15px;
+}
+.paymentsetailscard{
+  box-shadow: 0px 2px 4px -2px #1018280F;
+box-shadow: 0px 4px 8px -2px #1018281A;
+width: 100%;
+display: flex;
+margin-top:10px;
+align-items: center;
+
+}
+
+.support-div{
+  border-radius: 12px;
+  width: 100%;
+  margin-top: 10px;
+  padding:10px 15px 10px 15px;
+  box-shadow: 0px 2px 4px -2px #1018280F; 
+  box-shadow: 0px 4px 8px -2px #1018281A;
+}
+.profile-header-div{
+  background-color: #2a1c03;
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.profile-details-wrapper{
+  background-color: #fff;
+  border-radius: 30px 30px 0px 0px;
+  position: absolute;
+top: 180px;
+  width: 100%;
+  height: 100px;
+}
+.underline {
+  text-decoration: underline !important;
+}

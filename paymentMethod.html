@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Gamnest | Payments</title>
+</head>
+<body>
+    <div class="payment-wrapper p-4"> 
+        <div class="relative flex items-center justify-center  w-full  mt-2">
+            <a href="./gamepage01.html" class="absolute left-0">
+                <img src="./assets/back.png" alt="Back" class="w-6 h-6">
+            </a>
+            <div class="font-semibold text-[24px]">
+                Payment Method
+            </div>
+            </div>
+            <div class="payment-div relative flex items-center gap-2"><img src="./assets/Icon left.png" /> Credit Card
+                <img  class="absolute right-1 top-3" src="./assets/_content-right.png" />
+            </div>
+            <div class="payment-div relative flex items-center gap-2"><img src="./assets/wallet.png" /> Wallet
+                <img  class="absolute right-1 top-3"  id="walletarrow"  src="./assets/_content-right.png" />
+            </div>
+            <div id="otherpayment" class="hidden ml-10 " >
+                <div class="flex items-center" >
+                    <img src="./assets/Logo.png" /> &nbsp; Apple Pay
+                    <input class="ml-auto" type="radio">
+                </div>
+                <div class="flex items-center" >
+                    <img src="./assets/Logo (1).png" /> &nbsp; Google Pay
+                    <input class="ml-auto" type="radio">
+                
+                </div>
+            </div>
+            <a   href="./paymentconfirmation.html">
+                <button
+                    class="btn fixed bottom-10 left-4 next-btn left-0 w-11/12  items-center hover:bg-yellow-400  py-2  rounded-full border border-gray-300 bg-yellow-400 font-bold text-gray-700">
+                    Next
+                </button>
+            </a>
+        </div>
+
+    
+
+
+
+    
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./js/game.js"></script>
+
+</body>
+</html>
